@@ -1,17 +1,17 @@
 """Replaces ``aws help`` with ``aws --help``."""
 
 import sys
-from typing import Sequence
+import typing as t
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 
 
 if sys.platform == "win32":
     import subprocess
 
-    def execvp(cmd: str, args: Sequence[str]) -> int:
+    def execvp(cmd: str, argv: t.Sequence[str]) -> int:
         """Mocking the behavior of execvp on Windows system."""
-        return subprocess.call(args)
+        return subprocess.call(argv)
 
 else:
     from os import execvp
