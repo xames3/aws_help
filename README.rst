@@ -39,4 +39,4 @@ In Action
         missions that control which Amazon Web  Services  resources  users  and
         applications  can  access. For more information about IAM, see Identity
         and Access Management (IAM) and the Identity and Access Management User
-        Guide .
+        Guide.
